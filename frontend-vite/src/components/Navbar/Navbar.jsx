@@ -1,51 +1,23 @@
 import React from "react";
+import "./Navbar.css";
+import logo from "../Assets/logo.png";
+import cart_icon from "../Assets/cart_icon.png";
 
 const Navbar = () => {
   return (
-    <nav
-      style={{
-        width: "100%",
-        padding: "15px 40px",
-        background: "#a063c3ff",
-        color: "white",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-      }}
-    >
-      {/* Logo */}
-      <h2 style={{ margin: 0 }}>My Logo</h2>
-
-      {/* Menu Items */}
-      <ul
-        style={{
-          listStyle: "none",
-          display: "flex",
-          gap: "25px",
-          margin: 0,
-          padding: 0,
-        }}
-      >
-        <li style={{ cursor: "pointer" }}>Home</li>
-        <li style={{ cursor: "pointer" }}>About</li>
-        <li style={{ cursor: "pointer" }}>Contact</li>
-        <li style={{ cursor: "pointer" }}>Cart</li>
+    <nav className="navbar">
+      <div classname="nav-logo">
+        <img src={logo} alt="logo"/>
+      </div>
+      <ul className="nav-menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+          <li>Cart</li>
+        
       </ul>
-
-      {/* Login Button */}
-      <button
-        style={{
-          padding: "8px 20px",
-          background: "#6e1cc6ff",
-          color: "white",
-          border: "none",
-          borderRadius: "8px",
-          cursor: "pointer",
-          fontWeight: "bold",
-        }}
-      >
-        Login
-      </button>
+      
+      <button className="login-btn">Login</button>
     </nav>
   );
 };
