@@ -1,14 +1,19 @@
 import React from "react";
 import Navbar from "./components/Navbar/Navbar";
-
+import "./App.css";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1>Welcome to friendly finds! 
-        This page is developed to sell the reused items.
-      </h1>
+
+      <div className="hero-container">
+        <h1 className="hero-title">Welcome to Friendly Finds! 💗</h1>
+
+        <p className="hero-desc">
+         "Where Yesterday’s Finds Become Today’s Treasures."🌿✨
+        </p>
+      </div>
     </>
   );
 }
