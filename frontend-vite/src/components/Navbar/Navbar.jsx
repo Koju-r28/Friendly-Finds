@@ -16,6 +16,8 @@
           <li>Contact</li>
           <li>
             <img src={cart_icon} alt="cart" className="cart-icon" />
+            
+
           </li>
         </ul>
 
