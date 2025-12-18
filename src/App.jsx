@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <h1>Welcome to Friendly-Finds</h1>
-      <img src="/vite.svg" alt="Vite Logo" />
+      
       <LoginSignup />
     </div>
   );
